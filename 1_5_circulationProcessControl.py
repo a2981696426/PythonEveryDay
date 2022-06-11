@@ -56,3 +56,11 @@ for single_char in character_set:
 # range(起始：结束：步长) 步长不能为0，包含起始不包含结束
 for data_item in range(1, 101):
     print(data_item, end="  ")
+print()
+
+# 判断奇偶
+for data_item in range(198, 201):
+    if data_item % 2 == 0:
+        print("偶数：%d" % data_item)
+    else:
+        print("奇数：%d" % data_item)

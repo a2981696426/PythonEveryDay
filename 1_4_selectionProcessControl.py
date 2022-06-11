@@ -75,3 +75,19 @@ if person == 0 and computer == 2 or person == 1 and computer == 0 or person == 2
         print("Class 4.")
 else:
     print("Class 5.")
+
+# break语句和continue语句
+for turns in range(0, 100):
+    num_first = random.randint(0, 10)
+    num_second = random.randint(0, 5)
+    turns += 1
+    if num_first * num_second >= 34:
+        print("Num_first: %d, Num_second: %d." % (num_first, num_second))
+        print("Now is the %d turns, and product is %d." % ((turns + 1), num_first * num_second))
+        break
+
+for data_items in range(0, 100):
+    data_items += random.randint(0, 10)
+    if data_items == 34:
+        print("Program stop at %d." % data_items)
+        continue
