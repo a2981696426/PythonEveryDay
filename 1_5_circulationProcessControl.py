@@ -8,7 +8,7 @@ while num < 100:
 print()
 
 # 九九乘法表
-
+# while实现
 row = 0
 while row < 9:
     row += 1
@@ -17,6 +17,13 @@ while row < 9:
         col += 1
         print("%d * %d = %d" % (col, row, col * row), end=" ")
     print()
+# for实现
+for i in range(1, 10):
+    for j in range(1, i+1):
+        print("%d * %d = %d" % (i, j, i*j), end="  ")
+        # j += 1
+    print()
+    # i += 1 这里for循环参数不需要自增，range函数不设置步长默认自增1
 
 # 打印直角三角形
 
@@ -64,3 +71,11 @@ for data_item in range(198, 201):
         print("偶数：%d" % data_item)
     else:
         print("奇数：%d" % data_item)
+
+# for…else…
+for items in range(1, 11):
+    print("%d" % items, end=" ")
+    if items == 5:
+        break
+else:
+    print("Completed.")

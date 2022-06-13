@@ -86,8 +86,8 @@ for turns in range(0, 100):
         print("Now is the %d turns, and product is %d." % ((turns + 1), num_first * num_second))
         break
 
-for data_items in range(0, 100):
-    data_items += random.randint(0, 10)
-    if data_items == 34:
-        print("Program stop at %d." % data_items)
+for data_items in range(0, 500):
+    data_contents = random.randint(0, 100)
+    if data_contents != 34:
         continue
+    print("Program stop at %d in %d round." % (data_contents, data_items))
