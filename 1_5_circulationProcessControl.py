@@ -1,3 +1,4 @@
+import random
 # while循环
 # 输出1~100之间的整数
 
@@ -79,3 +80,29 @@ for items in range(1, 11):
         break
 else:
     print("Completed.")
+print()
+
+# 密码输错三次锁定账户
+account = "1234"
+pwd = "nj"
+for i in range(0, 3):
+    account_input = input("Account:")
+    pwd_input = input("Password:")
+    if account_input == account and pwd_input == pwd:
+        print("Login successful.")
+        break  # 后续循环和else均不执行
+    else:
+        print("Incorrect account or password input.")
+else:
+    print("Account locked.")
+
+# while…else…
+items = 0
+while items < 5:
+    num = random.randint(0, 10)
+    if num > 6:
+        print("Number is %d" % num)
+        break
+    items += 1
+else:
+    print("Fail, and num is %d" % num)
